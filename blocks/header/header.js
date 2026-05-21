@@ -161,20 +161,21 @@ export default async function decorate(block) {
   const utilityLeft = document.createElement('div');
   utilityLeft.className = 'nav-utility-left';
   const logoLink = brandSection.querySelector('a');
-  const logoImg = brandSection.querySelector('img');
-  if (logoLink && logoImg) {
-    const logo = document.createElement('a');
-    logo.href = logoLink.getAttribute('href') || '/';
-    logo.className = 'nav-logo';
-    logo.setAttribute('aria-label', 'ENI Home');
-    const img = document.createElement('img');
-    img.src = logoImg.getAttribute('src');
-    img.alt = logoImg.getAttribute('alt') || 'ENI Logo';
-    img.width = 40;
-    img.height = 40;
-    logo.appendChild(img);
-    utilityLeft.appendChild(logo);
-  }
+  const logoImg = brandSection.querySelector('img') || brandSection.querySelector('picture img');
+  const logoSrc = logoImg
+    ? logoImg.getAttribute('src')
+    : 'https://www.eni.com/content/dam/enicom/images/loghi/logoEni.svg';
+  const logoHref = logoLink ? (logoLink.getAttribute('href') || '/') : '/';
+
+  const logo = document.createElement('a');
+  logo.href = logoHref;
+  logo.className = 'nav-logo';
+  logo.setAttribute('aria-label', 'ENI Home');
+  const img = document.createElement('img');
+  img.src = logoSrc;
+  img.alt = logoImg ? (logoImg.getAttribute('alt') || 'ENI Logo') : 'ENI Logo';
+  logo.appendChild(img);
+  utilityLeft.appendChild(logo);
 
   // Utility center: EnergIA button
   const utilityCenter = document.createElement('div');
