@@ -61,19 +61,27 @@ header nav#nav {
 .nav-energia-btn {
   display: inline-flex;
   align-items: center;
-  padding: 6px 20px;
-  background-color: rgb(255 211 0);
+  gap: 8px;
+  padding: 8px 24px;
+  background: linear-gradient(135deg, rgb(255 230 50) 0%, rgb(255 200 0) 100%);
   color: #040832;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 700;
+  border-radius: 8px;
   text-decoration: none;
-  letter-spacing: 0.5px;
-  transition: background-color 0.2s;
+  transition: opacity 0.2s;
 }
 
 .nav-energia-btn:hover {
-  background-color: rgb(230 190 0);
+  opacity: 0.9;
+}
+
+.nav-energia-btn .nav-energia-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-energia-btn .nav-energia-logo {
+  height: 18px;
+  width: auto;
 }
 
 .nav-utility-right {

@@ -198,7 +198,7 @@ export default async function decorate(block) {
     const btn = document.createElement('a');
     btn.href = energiaLink.getAttribute('href');
     btn.className = 'nav-energia-btn';
-    btn.textContent = 'EnergIA';
+    btn.innerHTML = '<img src="https://www.eni.com/etc.clientlibs/enicom/clientlibs/clientlib-site/resources/assets/Sparkle_medium_AI.svg" alt="" class="nav-energia-icon"><img src="https://www.eni.com/content/dam/enicom/images/loghi/logo-energIA.svg" alt="EnergIA" class="nav-energia-logo">';
     utilityCenter.appendChild(btn);
   }
 
