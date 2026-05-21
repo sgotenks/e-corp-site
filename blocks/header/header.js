@@ -322,10 +322,10 @@ export default async function decorate(block) {
   hamburger.addEventListener('click', () => toggleMobileMenu(nav));
 
   // === Assemble ===
+  utilityRight.appendChild(hamburger);
   nav.appendChild(utilityBar);
   nav.appendChild(mainNav);
   nav.appendChild(overlay);
-  nav.appendChild(hamburger);
 
   const wrapper = document.createElement('div');
   wrapper.className = 'nav-wrapper';

@@ -348,9 +348,6 @@ header nav#nav {
 .nav-hamburger {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 14px;
-  right: 20px;
   z-index: 1001;
 }
 
