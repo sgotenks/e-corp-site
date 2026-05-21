@@ -1,0 +1,40 @@
+{
+  "variantName": "embed-widget",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-05-21T14:53:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.eni.com/it-IT/home.html",
+    "originPage": "Eni Italian homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "wide",
+    "purpose": "financial-widget",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "iframe embed",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "financial/stock data widgets",
+      "external dashboard embeds",
+      "interactive iframe content",
+      "third-party widget integrations"
+    ],
+    "notSuitableFor": [
+      "video embeds (use video block instead)",
+      "social media embeds with specific styling",
+      "inline content that should be native"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/it-it/home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-21T14:53:00.000Z"
+  }
+}

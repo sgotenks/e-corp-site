@@ -34,9 +34,33 @@
     ]
   },
   {
+    "id": "cards-explore",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "cards-mosaic",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "cards-pressrelease",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel-hero",
+    "components": [
+      "carousel-hero-item"
     ]
   },
   {

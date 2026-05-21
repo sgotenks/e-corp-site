@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.eni.com/it-IT/home.html",
+  "path": "it-it/home",
+  "timestamp": "2026-05-21T16:57:44.808Z",
+  "title": "Eni, una società integrata dell’energia",
+  "template": "homepage",
+  "blocks": [
+    "carousel-hero",
+    "cards-pressrelease",
+    "cards-mosaic",
+    "cards-mosaic",
+    "cards-explore",
+    "embed-widget"
+  ]
+}

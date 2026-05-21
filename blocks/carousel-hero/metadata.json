@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-05-21T14:53:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.eni.com/it-IT/home.html",
+    "originPage": "Eni Italian homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "homepage-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + paragraph + CTA button",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero sections",
+      "landing pages with rotating featured content",
+      "full-width image carousels with text overlays"
+    ],
+    "notSuitableFor": [
+      "small inline carousels",
+      "product image galleries",
+      "text-only content sliders"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/it-it/home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-21T14:53:00.000Z"
+  }
+}

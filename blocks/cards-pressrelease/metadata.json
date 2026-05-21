@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-pressrelease",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-21T14:53:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.eni.com/it-IT/home.html",
+    "originPage": "Eni Italian homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "press-release",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "date + headline + link indicator",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "press release listings",
+      "news feed sections",
+      "text-only card grids with dates",
+      "announcement listings"
+    ],
+    "notSuitableFor": [
+      "image-heavy card grids",
+      "product listings",
+      "feature showcases with icons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/it-it/home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-21T14:53:00.000Z"
+  }
+}

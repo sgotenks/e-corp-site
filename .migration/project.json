@@ -1,0 +1,11 @@
+{
+  "type": "xwalk",
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "contentHostUrl": "author-p129757-e1266090.adobeaemcloud.com",
+  "previewOrg": "sgotenks",
+  "previewSite": "e-corp-site",
+  "aemSitePath": "/content/e-corp-site",
+  "aemAssetsFolderPath": "/content/dam/e-corp-site",
+  "aemSiteName": "e-corp-site",
+  "aemSiteTitle": "E Corp Site"
+}

@@ -1,0 +1,131 @@
+/* Block: cards-explore -- Image overlay cards with category tag and headline */
+
+/* Source: ENI homepage "Scopri Eni" section */
+
+.cards-explore > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-explore > ul > li {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background-color: rgb(2 5 30);
+}
+
+.cards-explore > ul > li a:any-link {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image cell - full bleed behind overlay */
+.cards-explore .cards-explore-card-image {
+  position: absolute;
+  inset: 0;
+  line-height: 0;
+  z-index: 0;
+}
+
+.cards-explore .cards-explore-card-image p {
+  margin: 0;
+  height: 100%;
+}
+
+.cards-explore .cards-explore-card-image picture {
+  display: block;
+  height: 100%;
+}
+
+.cards-explore .cards-explore-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/* Gradient overlay via pseudo-element on image cell */
+.cards-explore .cards-explore-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(2 5 30 / 0%) 30%, rgb(2 5 30 / 90%) 80%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Text overlay at bottom */
+.cards-explore .cards-explore-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin: 0;
+}
+
+/* Category tag - white pill */
+.cards-explore .cards-explore-card-body > p:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--body-font-family);
+  letter-spacing: 0.976px;
+  line-height: 16px;
+  color: rgb(8 81 114);
+  background-color: rgb(255 255 255);
+  padding: 4px 8px;
+  border-radius: 2px;
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+/* Headline h5 */
+.cards-explore h5 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+  line-height: 28px;
+  color: rgb(255 255 255);
+  margin: 0;
+}
+
+/* Hide the link paragraph (redundant link text) */
+.cards-explore .cards-explore-card-body > p:last-child {
+  display: none;
+}
+
+/* Button reset - links in this block are not buttons */
+.cards-explore .cards-explore-card-body .button-container {
+  display: none;
+}
+
+@media (width >= 600px) {
+  .cards-explore > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-explore > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards-explore h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

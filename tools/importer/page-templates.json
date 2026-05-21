@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.eni.com/it-IT/home.html"],
+      "description": "ENI Italy homepage with hero, navigation, featured content, and corporate information",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [".homepage-slider-v2"]
+        },
+        {
+          "name": "cards-pressrelease",
+          "instances": [".homepage-fascia-cs-v2 .slick-fascia"]
+        },
+        {
+          "name": "cards-mosaic",
+          "instances": ["#widget--33891057 .mosaico", "#widget-913498274 .mosaico"]
+        },
+        {
+          "name": "cards-explore",
+          "instances": [".homepage-approfondisci .containerCard.default"]
+        },
+        {
+          "name": "embed-widget",
+          "instances": [".hp-iframe iframe"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Carousel",
+          "selector": ".container.responsivegrid.hero-template",
+          "style": null,
+          "blocks": ["carousel-hero"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Comunicati Stampa",
+          "selector": ".homepage-fascia-cs-v2",
+          "style": null,
+          "blocks": ["cards-pressrelease"],
+          "defaultContent": [".homepage-fascia-cs-v2 .header h2", ".homepage-fascia-cs-v2 .header a"]
+        },
+        {
+          "id": "section-3",
+          "name": "Business Highlights",
+          "selector": "#widget--33891057",
+          "style": "dark",
+          "blocks": ["cards-mosaic"],
+          "defaultContent": ["#widget--33891057 .title h2"]
+        },
+        {
+          "id": "section-4",
+          "name": "Iniziative in Evidenza",
+          "selector": "#widget-913498274",
+          "style": "dark",
+          "blocks": ["cards-mosaic"],
+          "defaultContent": ["#widget-913498274 .title h2"]
+        },
+        {
+          "id": "section-5",
+          "name": "Scopri Eni",
+          "selector": ".homepage-approfondisci",
+          "style": null,
+          "blocks": ["cards-explore"],
+          "defaultContent": [".homepage-approfondisci .title h2", ".homepage-approfondisci .title p"]
+        },
+        {
+          "id": "section-6",
+          "name": "Financial Widget",
+          "selector": ".hp-iframe",
+          "style": null,
+          "blocks": ["embed-widget"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

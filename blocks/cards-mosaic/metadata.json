@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-mosaic",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-21T14:53:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.eni.com/it-IT/home.html",
+    "originPage": "Eni Italian homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "wide",
+    "purpose": "highlight",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "full-bleed image + category tag + headline overlay",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "business highlights on dark backgrounds",
+      "featured content mosaic grids",
+      "editorial image cards with overlaid text",
+      "asymmetric image card layouts"
+    ],
+    "notSuitableFor": [
+      "text-only cards",
+      "product listings with prices",
+      "cards on light backgrounds",
+      "uniform grid layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/it-it/home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-21T14:53:00.000Z"
+  }
+}

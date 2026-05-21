@@ -1,0 +1,141 @@
+/* Block: cards-pressrelease
+ * Press release cards in a horizontal row on dark navy background.
+ * Source: ENI homepage "Comunicati stampa" section.
+ * Each card has date/time, bold headline, and a link.
+ */
+
+/* Section-level: dark background for the press release area */
+.cards-pressrelease-wrapper {
+  background-color: rgb(4 8 50);
+  max-width: 100% !important;
+  padding: 48px 36px 40px !important;
+}
+
+/* List reset and horizontal layout */
+.cards-pressrelease > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Each card (li) */
+.cards-pressrelease > ul > li {
+  background-color: rgb(255 255 255 / 8%);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card body — the text content area */
+.cards-pressrelease .cards-pressrelease-card-body {
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 148px;
+}
+
+/* Hide the empty first cell (cards-pressrelease-card-body with no content) */
+.cards-pressrelease > ul > li > .cards-pressrelease-card-body:first-child:empty {
+  display: none;
+}
+
+/* Date/time paragraph (first p in card body) */
+.cards-pressrelease .cards-pressrelease-card-body p:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255 255 255);
+  line-height: 20px;
+  font-family: var(--body-font-family);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Headline paragraph (p with strong) */
+.cards-pressrelease .cards-pressrelease-card-body p strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255 255 255);
+  line-height: 26px;
+  font-family: var(--heading-font-family);
+}
+
+.cards-pressrelease .cards-pressrelease-card-body p:nth-child(2) {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* Link paragraph (last p — the chevron link) */
+.cards-pressrelease .cards-pressrelease-card-body p:last-child {
+  margin: 0;
+  display: none;
+}
+
+/* Reset EDS button styling for links inside the block */
+main .cards-pressrelease a.button:any-link {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: rgb(255 255 255);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  white-space: normal;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* All links inside block — white text, no underline */
+.cards-pressrelease a:any-link {
+  color: rgb(255 255 255);
+  text-decoration: none;
+}
+
+.cards-pressrelease a:hover {
+  text-decoration: underline;
+  color: rgb(255 255 255);
+}
+
+/* No borders between cards — separation is via grid gap only */
+
+/* Remove image styles — no images in this block */
+.cards-pressrelease > ul > li img {
+  display: none;
+}
+
+/* Mobile: stack cards vertically */
+@media (width < 900px) {
+  .cards-pressrelease-wrapper {
+    padding: 32px 16px !important;
+  }
+
+  .cards-pressrelease > ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cards-pressrelease > ul > li + li {
+    border-top: 1px solid rgb(255 255 255 / 15%);
+    padding-top: 16px;
+  }
+
+  .cards-pressrelease .cards-pressrelease-card-body {
+    padding: 16px 0;
+    min-height: auto;
+  }
+}
+
+/* Tablet: 2 columns */
+@media (width >= 600px) and (width < 900px) {
+  .cards-pressrelease > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
