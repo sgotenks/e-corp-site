@@ -15,6 +15,7 @@
   color: rgb(255 255 255);
 }
 
+
 /* Section container: heading row + block */
 .cards-pressrelease-container {
   padding: 24px 0 32px !important;
@@ -78,6 +79,12 @@
   display: flex;
   flex-direction: column;
   padding: 36px 32px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cards-pressrelease > ul > li:hover {
+  background-color: rgb(255 255 255 / 15%);
 }
 
 /* Card body — the text content area */
@@ -112,6 +119,12 @@
   color: rgb(255 255 255);
   line-height: 24px;
   font-family: var(--heading-font-family);
+  transition: color 0.2s ease;
+}
+
+.cards-pressrelease > ul > li:hover .cards-pressrelease-card-body p strong {
+  text-decoration: underline;
+  color: rgb(9 88 165);
 }
 
 .cards-pressrelease .cards-pressrelease-card-body p:nth-child(2) {

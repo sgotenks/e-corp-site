@@ -28,6 +28,7 @@
   overflow: hidden;
   background-color: rgb(4 8 50);
   border: none;
+  cursor: pointer;
 }
 
 /* Gradient overlay on card */
@@ -114,6 +115,21 @@
 .cards-mosaic > ul > li a:any-link {
   text-decoration: none;
   color: #fff;
+}
+
+/* Card hover effects — darker overlay + blue underlined headline */
+.cards-mosaic > ul > li:hover::after {
+  background: linear-gradient(rgb(2 5 30 / 40%) 0%, rgb(2 5 30 / 95%) 80%);
+}
+
+.cards-mosaic > ul > li:hover .cards-mosaic-card-body h5 {
+  color: rgb(9 88 165);
+  text-decoration: underline;
+}
+
+/* Hide "Mostra tutto / Mostra meno" leftover from source */
+.cards-mosaic-container.section > div > p:last-of-type {
+  display: none;
 }
 
 @media (width >= 900px) {

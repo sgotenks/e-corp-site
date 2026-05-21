@@ -17,6 +17,7 @@
   overflow: hidden;
   aspect-ratio: 1 / 1;
   background-color: rgb(2 5 30);
+  cursor: pointer;
 }
 
 .cards-explore > ul > li a:any-link {
@@ -111,6 +112,16 @@
 /* Button reset - links in this block are not buttons */
 .cards-explore .cards-explore-card-body .button-container {
   display: none;
+}
+
+/* Card hover effects — darker overlay + blue underlined headline */
+.cards-explore > ul > li:hover::after {
+  background: linear-gradient(rgb(2 5 30 / 40%) 0%, rgb(2 5 30 / 95%) 80%);
+}
+
+.cards-explore > ul > li:hover .cards-explore-card-body h5 {
+  color: rgb(9 88 165);
+  text-decoration: underline;
 }
 
 @media (width >= 600px) {

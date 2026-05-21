@@ -28,6 +28,7 @@ body.appear {
 
 header {
   height: var(--header-height);
+  background-color: var(--dark-color);
 }
 
 header .header,
