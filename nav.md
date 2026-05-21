@@ -1,0 +1,43 @@
+- [![Logo Eni](https://www.eni.com/content/dam/enicom/images/favicons/favicon.svg)](/)
+
+---
+
+- **Azienda**
+  - [La nostra storia](/it-IT/azienda/la-nostra-storia)
+  - [Identità del marchio](/it-IT/azienda/identita-marchio)
+  - [Diversity & Inclusion](/it-IT/azienda/diversity-inclusion)
+  - [Modello di Business](/it-IT/azienda/modello-business)
+  - [Struttura Organizzativa](/it-IT/azienda/struttura-organizzativa)
+  - [Management](/it-IT/azienda/management)
+- **Governance**
+  - [Modello di Eni](/it-IT/governance/il-modello-di-eni)
+  - [Consiglio di Amministrazione](/it-IT/governance/organi-societari/consiglio-amministrazione)
+  - [Remunerazione](/it-IT/governance/remunerazione)
+  - [Assemblea Azionisti 2026](/it-IT/governance/assemblea-azionisti-2026)
+- **Sostenibilità**
+  - [Impegno per la sostenibilità](/it-IT/sostenibilita/nostro-impegno)
+  - [Clima e decarbonizzazione](/it-IT/sostenibilita/decarbonizzazione)
+  - [Tutela dell'ambiente](/it-IT/sostenibilita/ambiente)
+  - [Persone e comunità](/it-IT/sostenibilita/persone-comunita)
+- [Visione](/it-IT/visione)
+- [Azioni](/it-IT/azioni)
+- [Prodotti](/it-IT/prodotti)
+- **Investitori**
+  - [Strategia](/it-IT/investitori/strategia)
+  - [Rating ESG](/it-IT/investitori/rating-esg)
+  - [Reporting e bilanci](/it-IT/investitori/report-bilanci)
+  - [Calendario finanziario](/it-IT/investitori/calendario-finanziario)
+- **Media**
+  - [Comunicati stampa](/it-IT/media/comunicati-stampa)
+  - [News](/it-IT/media/news)
+  - [Storie](/it-IT/media/storie)
+  - [Eventi](/it-IT/media/eventi)
+- **Carriere**
+  - [Processo di selezione](/it-IT/carriere/processo-selezione)
+  - [Lavorare in Eni](/it-IT/carriere/opportunita-lavoro)
+  - [Formazione](/it-IT/carriere/formazione)
+
+---
+
+- [Ricerca](#)
+- [Accedi](#)
