@@ -4,11 +4,60 @@
  * Each card has date/time, bold headline, and a link.
  */
 
+/* All links inside block — white text, no underline */
+.cards-pressrelease a:any-link {
+  color: rgb(255 255 255);
+  text-decoration: none;
+}
+
+.cards-pressrelease a:hover {
+  text-decoration: underline;
+  color: rgb(255 255 255);
+}
+
+/* Section container: heading row + block */
+.cards-pressrelease-container {
+  padding: 24px 0 32px !important;
+}
+
+.cards-pressrelease-container > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+}
+
+.cards-pressrelease-container > div > h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cards-pressrelease-container > div > p.button-container {
+  margin: 0;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.cards-pressrelease-container > div > p.button-container a {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255 211 0) !important;
+  text-decoration: none;
+}
+
 /* Section-level: dark background for the press release area */
 .cards-pressrelease-wrapper {
   background-color: rgb(4 8 50);
   max-width: 100% !important;
-  padding: 48px 36px 40px !important;
+  padding: 24px 36px !important;
+}
+
+.cards-pressrelease-container > div > .cards-pressrelease-wrapper {
+  grid-column: 1 / -1;
+  margin-top: 24px;
 }
 
 /* List reset and horizontal layout */
@@ -28,16 +77,16 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  padding: 36px 32px;
 }
 
 /* Card body — the text content area */
 .cards-pressrelease .cards-pressrelease-card-body {
   margin: 0;
-  padding: 24px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  min-height: 148px;
+  gap: 20px;
 }
 
 /* Hide the empty first cell (cards-pressrelease-card-body with no content) */
@@ -58,10 +107,10 @@
 
 /* Headline paragraph (p with strong) */
 .cards-pressrelease .cards-pressrelease-card-body p strong {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   color: rgb(255 255 255);
-  line-height: 26px;
+  line-height: 24px;
   font-family: var(--heading-font-family);
 }
 
@@ -93,19 +142,6 @@ main .cards-pressrelease a.button:any-link {
   letter-spacing: normal;
 }
 
-/* All links inside block — white text, no underline */
-.cards-pressrelease a:any-link {
-  color: rgb(255 255 255);
-  text-decoration: none;
-}
-
-.cards-pressrelease a:hover {
-  text-decoration: underline;
-  color: rgb(255 255 255);
-}
-
-/* No borders between cards — separation is via grid gap only */
-
 /* Remove image styles — no images in this block */
 .cards-pressrelease > ul > li img {
   display: none;
@@ -122,14 +158,13 @@ main .cards-pressrelease a.button:any-link {
     gap: 16px;
   }
 
+  .cards-pressrelease > ul > li {
+    padding: 16px;
+  }
+
   .cards-pressrelease > ul > li + li {
     border-top: 1px solid rgb(255 255 255 / 15%);
     padding-top: 16px;
-  }
-
-  .cards-pressrelease .cards-pressrelease-card-body {
-    padding: 16px 0;
-    min-height: auto;
   }
 }
 

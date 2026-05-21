@@ -15,8 +15,8 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--dark-color);
+  color: #fff;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
@@ -55,7 +55,7 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.2;
   scroll-margin: 40px;
 }
@@ -103,13 +103,13 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: rgb(255 211 0);
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: rgb(255 211 0);
   text-decoration: underline;
 }
 
@@ -197,9 +197,15 @@ main img {
   width: 100%;
 }
 
-/* sections */
+/* sections — ENI homepage: entire page is dark navy */
+main {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
 main > .section {
-  margin: 40px 0;
+  margin: 0;
+  padding: var(--section-padding) 0;
 }
 
 main > .section > div {
@@ -210,6 +216,7 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
+  padding-top: 0;
 }
 
 @media (width >= 900px) {
@@ -218,26 +225,37 @@ main > .section:first-of-type {
   }
 }
 
+/* All headings in main are white */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  color: #fff;
+}
+
+/* Default content links are yellow */
+main > .section > div > p a:any-link {
+  color: rgb(255 211 0);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main > .section > div > p a:hover {
+  text-decoration: underline;
+}
+
 /* section variants */
 main .section.dark {
   background-color: var(--dark-color);
   color: #fff;
-  margin: 0;
   padding: var(--section-padding) 0;
-}
-
-main .section.dark h1,
-main .section.dark h2,
-main .section.dark h3,
-main .section.dark h4,
-main .section.dark h5,
-main .section.dark h6 {
-  color: #fff;
 }
 
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
+  background-color: var(--dark-color);
+  color: #fff;
   padding: var(--section-padding) 0;
 }

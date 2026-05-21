@@ -5,7 +5,7 @@
   --link-color: #0a58ca;
   --link-hover-color: #084298;
   --light-color: #f8f8f8;
-  --dark-color: #1a1a2e;
+  --dark-color: #040832;
   --overlay-background-color: #f0f0f0;
 
   /* ENI Brand Fonts */
@@ -35,10 +35,10 @@
 
 @media (width >= 900px) {
   :root {
-    --heading-font-size-xxl: 48px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 24px;
-    --heading-font-size-m: 20px;
+    --heading-font-size-xxl: 64px;
+    --heading-font-size-xl: 56px;
+    --heading-font-size-l: 32px;
+    --heading-font-size-m: 24px;
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 18px;
   }
