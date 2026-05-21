@@ -1,7 +1,7 @@
 {
   "mappings": [
-    "/content/aem-block-collection/:/",
-    "/content/aem-block-collection/metadata:/metadata.json",
-    "/content/aem-block-collection/configuration:/.helix/config.json"
+    "/content/e-corp-site/:/",
+    "/content/e-corp-site/metadata:/metadata.json",
+    "/content/e-corp-site/configuration:/.helix/config.json"
   ]
 }
