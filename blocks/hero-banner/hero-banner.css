@@ -49,8 +49,8 @@
   padding: 40px 32px;
 }
 
-/* Eyebrow text (subheading above main heading) — 2 lines, teal */
-.hero-banner > div:last-child > p:first-child {
+/* All paragraph text in the content area — teal by default */
+.hero-banner p {
   font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 24px;
@@ -61,9 +61,10 @@
   margin: 0 0 8px;
 }
 
-.hero-banner > div:last-child > p:first-child strong {
+.hero-banner p strong {
   display: block;
   font-weight: 700;
+  color: #00647d;
 }
 
 /* Main heading with teal overlay background */
